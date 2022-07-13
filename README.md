@@ -57,15 +57,16 @@ TransVLAD/
 
 ## Training
 
-Pre-train a MAE encoder for few-shot learning (1600 epoch). We follow the unofficial implementation with normalized pixels as the target to predict. If you want to visualize image restoration like MAE original paper, please add `--no_normlize_target` in script. Our pretrain models can be downloaded from [here](https://huggingface.co/datasets/pancake/TransVLAD_pretrain_models/tree/main).
+Pre-train a MAE encoder for few-shot learning (1600 epoch). We follow the unofficial implementation with normalized pixels as the target to predict.  Our pretrain models can be downloaded from [here](https://huggingface.co/datasets/pancake/TransVLAD_pretrain_models/tree/main).
 
+- `--no_normlize_target` if you want to visualize image restoration like MAE original paper, you should add it to the script.
 ```bash
 bash pretrain.sh
 ```
 
 Fine-tune TransVLAD on a few-shot dataset (100 epoch).
-- `--focal_gamma` is the focusing parameter in soft focal loss.
-- `--meta_distance cos` means using cosine similarity to measure features' distance.
+- `--focal_gamma` is the focusing parameter in soft focal loss;
+- `--meta_distance cos` means using cosine similarity to measure features' distance;
 - `--meta_val` means validating in few-shot testing way.
 
 ```bash
