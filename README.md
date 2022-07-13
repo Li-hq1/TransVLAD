@@ -1,9 +1,9 @@
 # ECCV-22 TransVLAD: A PyTorch Implementation
 
-![TransVLAD](figures/training_phase.png)
-<!-- <div align=center>
-  <img src="figures/training_phase.png" width="600px">
-</div> -->
+<!-- ![TransVLAD](figures/training_phase.png) -->
+<div align=center>
+  <img src="figures/training_phase.png" width="900px">
+</div>
 
 - This is a PyTorch/GPU Implementation of the paper [TransVLAD: Focusing on Locally Aggregated Descriptors for Few-Shot Learning](http).
 - Our code is mainly based on the [unofficial PyTorch implementation of MAE](https://github.com/pengzhiliang/MAE-pytorch) publised before official implementation available. And the few-shot learning setting is based on the [meta-baseline repo](https://github.com/yinboc/few-shot-meta-baseline).  We really appreciate their precious works!
@@ -88,7 +88,7 @@ bash finetune.sh
 
 <!-- ![testing](figures/testing_phase.png) -->
 <div align=center>
-  <img src="figures/testing_phase.png" width="800px">
+  <img src="figures/testing_phase.png" width="700px">
 </div>
 
 Meta-testing is the few-shot standard testing way. Cross-domain few-shot testing can be simply done by testing the model on another dataset different from the dataset used in the training phase.
