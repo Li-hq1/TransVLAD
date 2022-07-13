@@ -12,8 +12,8 @@
 
 System
 ```bash
-python3.9.7
 ubuntu20.04
+python3.9.7
 cuda11.0
 ```
 
