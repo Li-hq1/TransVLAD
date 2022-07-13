@@ -47,6 +47,9 @@ The file structure should be as follows:
     ├── output/
     ├── utils/
     ├── ...
+    ├── LICENSE
+    ├── README.md
+    
 
 ## Training
 
