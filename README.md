@@ -20,7 +20,9 @@ einops
 
 ## Datasets
 
-Dataset can be downloaded from [here](https://huggingface.co/datasets/pancake/few_shot_dataset/tree/main):
+Dataset can be downloaded from [here](https://huggingface.co/datasets/pancake/few_shot_dataset/tree/main). 
+
+Including:
 
 - *miniImageNet*. It contains 100 classes with 600 images in each class, which are built upon the ImageNet dataset. The 100 classes are divided into 64, 16, 20 for meta-training, meta-validation and meta-testing, respectively.
 - *tieredImageNet*. TieredImageNet is also a subset of ImageNet, which includes 608 classes from 34 super-classes. Compared with miniImageNet, the splits of meta-training(20), meta-validation(6) and meta-testing(8) are set according to the super-classes to enlarge the domain difference between training and testing phase. The dataset also include more images for training and evaluation.
@@ -55,13 +57,13 @@ TransVLAD/
 
 ## Training
 
-- Pre-train a MAE encoder for few-shot learning (1600 epoch). We follow the unofficial implementation with normalized pixels as the target to predict. If you want to visualize image restoration like MAE original paper, please add `--no_normlize_target` in script.
+Pre-train a MAE encoder for few-shot learning (1600 epoch). We follow the unofficial implementation with normalized pixels as the target to predict. If you want to visualize image restoration like MAE original paper, please add `--no_normlize_target` in script. Our pretrain models can be downloaded from [here](https://huggingface.co/datasets/pancake/TransVLAD_pretrain_models/tree/main).
 
 ```bash
 bash pretrain.sh
 ```
 
-- Fine-tune TransVLAD on a few-shot dataset (100 epoch).
+Fine-tune TransVLAD on a few-shot dataset (100 epoch).
 - `--focal_gamma` is the focusing parameter in soft focal loss.
 - `--meta_distance cos` means using cosine similarity to measure features' distance.
 - `--meta_val` means validating in few-shot testing way.
@@ -77,7 +79,7 @@ bash finetune.sh
   <img src="figures/testing_phase.png" width=70%>
 </div>
 
-- Meta-testing is the few-shot standard testing way. Cross-domain few-shot testing can be simply done by testing the model on another dataset different from the dataset used in the training phase.
+Meta-testing is the few-shot standard testing way. Cross-domain few-shot testing can be simply done by testing the model on another dataset different from the dataset used in the training phase.
 
 ```bash
 bash test.sh
