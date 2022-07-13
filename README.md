@@ -2,7 +2,7 @@
 
 <!-- ![TransVLAD](figures/training_phase.png) -->
 <div align=center>
-  <img src="figures/training_phase.png" width=90%>
+  <img src="figures/training_phase.png" width="600px">
 </div>
 
 - This is a PyTorch/GPU Implementation of the paper [TransVLAD: Focusing on Locally Aggregated Descriptors for Few-Shot Learning](http).
@@ -69,7 +69,7 @@ bash finetune.sh
 
 <!-- ![testing](figures/testing_phase.png) -->
 <div align=center>
-  <img src="figures/testing_phase.png" width=70%>
+  <img src="figures/testing_phase.png" width="500px">
 </div>
 
 - Meta-testing is the few-shot standard testing way. Cross-domain few-shot testing can be simply done by testing the model on another dataset different from the dataset used in the training phase.
