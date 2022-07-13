@@ -11,6 +11,7 @@
 ## Dependencies
 
 System
+
 ```bash
 ubuntu20.04
 python3.9.7
@@ -18,6 +19,7 @@ cuda11.0
 ```
 
 Packages
+
 ```bash
 torch==1.7.1
 torchvision==0.8.2
@@ -28,7 +30,7 @@ einops
 
 ## Datasets
 
-Dataset can be downloaded from [here](https://huggingface.co/datasets/pancake/few_shot_dataset/tree/main). 
+Dataset can be downloaded from [here](https://huggingface.co/datasets/pancake/few_shot_dataset/tree/main).
 
 Including:
 
@@ -61,18 +63,19 @@ TransVLAD/
 ├── LICENSE
 ├── README.md
 ```
-    
 
 ## Training
 
 Pre-train a MAE encoder for few-shot learning (1600 epoch). We follow the unofficial implementation with normalized pixels as the target to predict.  Our pretrain models can be downloaded from [here](https://huggingface.co/datasets/pancake/TransVLAD_pretrain_models/tree/main).
 
 - `--no_normlize_target` if you want to visualize image restoration like MAE original paper, you should add it to the script.
+
 ```bash
 bash pretrain.sh
 ```
 
 Fine-tune TransVLAD on a few-shot dataset (100 epoch).
+
 - `--focal_gamma` is the focusing parameter in soft focal loss;
 - `--meta_distance cos` means using cosine similarity to measure features' distance;
 - `--meta_val` means validating in few-shot testing way.
