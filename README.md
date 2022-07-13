@@ -32,23 +32,25 @@ Dataset can be downloaded from [here](https://huggingface.co/datasets/pancake/fe
 
 The file structure should be as follows:
 
-    TransVLAD/
-    ├── data/
-    │   ├── datasets/
-    │   │   ├── CIFAR_FS/
-    │   │   ├── cub/
-    │   │   ├── FC100/
-    │   │   ├── mini-imagenet/
-    │   │   ├── tiered_imagenet/
-    │   ├── pretrain_models/
-    ├── datasets/
-    ├── engines/
-    ├── models/
-    ├── output/
-    ├── utils/
-    ├── ...
-    ├── LICENSE
-    ├── README.md
+``` sh
+TransVLAD/
+├── data/
+│   ├── datasets/
+│   │   ├── CIFAR_FS/
+│   │   ├── cub/
+│   │   ├── FC100/
+│   │   ├── mini-imagenet/
+│   │   ├── tiered_imagenet/
+│   ├── pretrain_models/
+├── datasets/
+├── engines/
+├── models/
+├── output/
+├── utils/
+├── ...
+├── LICENSE
+├── README.md
+```
     
 
 ## Training
