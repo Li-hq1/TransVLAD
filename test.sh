@@ -1,6 +1,6 @@
 # meta test
 MODEL_PATH='output/finetune_output/MINI_1600_focal2_nextvlad_mask.7_lr7e4/checkpoint-best_meta_val.pth'
-DATASET_NAME='mini' #'mini', 'FC100', 'CIFAR_FS', 
+DATASET_NAME='mini'  #'mini', 'FC100', 'tiered', 'CUB', 'CIFAR_FS'
 OUTPUT_DIR='output/finetune_output/test'
 GPUS='0'
 python run_finetune.py \
