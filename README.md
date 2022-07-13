@@ -10,6 +10,14 @@
 
 ## Dependencies
 
+System
+```bash
+python3.9.7
+ubuntu20.04
+cuda11.0
+```
+
+Packages
 ```bash
 torch==1.7.1
 torchvision==0.8.2
