@@ -253,22 +253,10 @@ class CategoriesSampler:
 
 # -------------------------pretrain------------------------------ #
 class DataAugmentationForMAE(object):
-    """
-    return transformed image and masking position for image patch
-    """
-
     def __init__(self, args):
         imagenet_default_mean_and_std = args.imagenet_default_mean_and_std
-        mean = (
-            IMAGENET_INCEPTION_MEAN
-            if not imagenet_default_mean_and_std
-            else IMAGENET_DEFAULT_MEAN
-        )
-        std = (
-            IMAGENET_INCEPTION_STD
-            if not imagenet_default_mean_and_std
-            else IMAGENET_DEFAULT_STD
-        )
+        mean = IMAGENET_INCEPTION_MEAN if not imagenet_default_mean_and_std else IMAGENET_DEFAULT_MEAN
+        std = IMAGENET_INCEPTION_STD if not imagenet_default_mean_and_std else IMAGENET_DEFAULT_STD
 
         self.transform = transforms.Compose(
             [
