@@ -13,19 +13,19 @@
 System
 
 ```bash
-ubuntu20.04
-python3.9.7
-cuda11.0
+ubuntu 20.04
+python 3.8.12
+cuda 11.0
 ```
 
 Packages
 
 ```bash
-torch==1.7.1
-torchvision==0.8.2
-timm==0.3.2
+torch==1.10.0
+torchvision==0.11.1
+timm==0.4.12
+einops==0.3.2
 numpy
-einops
 ```
 
 ## Datasets
