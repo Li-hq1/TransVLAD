@@ -5,7 +5,7 @@
   <img src="figures/training_phase.png" width="900px">
 </div>
 
-- This is a PyTorch/GPU Implementation of the paper [TransVLAD: Focusing on Locally Aggregated Descriptors for Few-Shot Learning](http).
+- This is a PyTorch/GPU Implementation of the paper [TransVLAD: Focusing on Locally Aggregated Descriptors for Few-Shot Learning](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136800509.pdf).
 - Our code is mainly based on the [unofficial PyTorch implementation of MAE](https://github.com/pengzhiliang/MAE-pytorch) publised before official implementation available. And the few-shot learning setting is based on the [meta-baseline repo](https://github.com/yinboc/few-shot-meta-baseline).  We really appreciate their precious works!
 
 ## Dependencies
